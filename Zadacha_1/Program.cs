@@ -1,14 +1,14 @@
 ﻿// Напишите программу вычисления модуля числа;
 
-string s_a = Console.ReadLine();
+string s_a = Console.ReadLine();        // Выводим результат
 int a = int.Parse(s_a);
 
-if (a>0)
+if (a>0)                                // Делаем проверку
 {
-    Console.WriteLine(a);
+    Console.WriteLine(a);               // Выводим результат
 }
-else
+else                                    // Если число отрицательное, то вводим доп. условия
 {
     a=-1*a;
-    Console.WriteLine(a);
+    Console.WriteLine(a);               // Выводим результат
 }
