@@ -1,7 +1,7 @@
 ﻿// Напишите программу, которая задаёт массив из 8 элементов случайными числами и выводит их на экран. 
 // Оформите заполнение массива и вывод в виде функции 
 
-int[] array = new int [8];
+int[] array = new int[8];
 void Array(int[] array)
 {
     int count = array.Length;
@@ -13,6 +13,5 @@ void Array(int[] array)
     }
     Console.WriteLine();
 }
-
 
 Array(array);

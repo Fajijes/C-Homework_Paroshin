@@ -9,13 +9,10 @@ void degree(int A, int B)
     for (int i = 0; i < B; i++)
     {
         x = x * A;
-    
-  
     }
     Console.WriteLine();
     Console.WriteLine($"{A}^{B} = {x}");
 }
-
 
 degree(2, 5);
 Console.WriteLine("------");
