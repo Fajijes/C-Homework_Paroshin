@@ -2,16 +2,16 @@
 // и выдаёт сумму цифр в числе
 
 void SumNum(int num)
-{   
-    int x=0;
-    int n=num;
+{
+    int x = 0;
+    int n = num;
     for (int i = 0; i <= n; i++)
     {
         int num1 = n % 10;
         n = n / 10;
-        x = num1+x;
+        x = num1 + x;
     }
-    x=x+n;
+    x = x + n;
     Console.WriteLine($"Суммой цифр числа {num} является {x}");
 }
 

@@ -4,11 +4,11 @@
 
 void degree(int A, int B)
 {
-    int x = 1;
+    int x = A;
   
     for (int i = 0; i < B; i++)
     {
-        x = x * A;
+        x *= A;
     }
     Console.WriteLine();
     Console.WriteLine($"{A}^{B} = {x}");
