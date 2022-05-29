@@ -1,11 +1,11 @@
 ﻿// Задайте массив вещественных чисел. 
 // Найдите разницу между максимальным и минимальным элементов массива.
 
-void Print(int[] arr)
+void Print(double[] arr)
 {
     Console.WriteLine();
     Console.Write("Сгенерированный массив данных---> ");
-    int size = arr.Length;
+    double size = arr.Length;
 
     for (int i = 0; i < size; i++)
     {
@@ -14,26 +14,28 @@ void Print(int[] arr)
 
 }
 
-int[] Mass(int size)
+double[] Mass(int size)
 {
-    int[] arr = new int[size];
+
+    double[] arr = new double[size];
+    Random n_new = new Random();
 
     for (int i = 0; i < size; i++)
     {
-        arr[i] = new Random().Next(100, 1000);
+        arr[i] = Math.Round(n_new.NextDouble() * (10 + 12) - 10, 2);
     }
     return arr;
 }
 
-void Difference(int[] arr)
+void Difference(double[] arr)
 {
-    int max = arr[0];
-    int min = arr[0];
+    double max = arr[0];
+    double min = arr[0];
 
-    for (int i = 0; i < arr.Length; i++)
+    for (int i = 1; i < arr.Length; i++)
     {
         if (arr[i] > max) max = arr[i];
-        if (arr[i] < min) min = arr[i];
+        else if (arr[i] < min) min = arr[i];
 
     }
     Console.WriteLine();
@@ -43,11 +45,11 @@ void Difference(int[] arr)
 
 }
 
-int[] arr_1 = Mass(10);
+double[] arr_1 = Mass(10);
 Print(arr_1);
 Difference(arr_1);
 
-int[] arr_2 = Mass(20);
+double[] arr_2 = Mass(20);
 Print(arr_2);
 Difference(arr_2);
 Console.WriteLine();

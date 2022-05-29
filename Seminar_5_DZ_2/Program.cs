@@ -24,7 +24,7 @@ int[] Mass(int size)
 void SumOdd(int[] arr)
 {
     double s_odd = 0;
-    for (int i = 0; i < arr.Length; i ++)
+    for (int i = 1; i < arr.Length; i +=2)
     {
         if (i % 2 == 1) s_odd += arr[i];
     }
@@ -33,12 +33,11 @@ void SumOdd(int[] arr)
  
 }
 
-
-int[] arr_1 = Mass(15);
+int[] arr_1 = Mass(5);
 Print(arr_1);
 SumOdd(arr_1);
 
-int[] arr_2 = Mass(20);
+int[] arr_2 = Mass(10);
 Print(arr_2);
 SumOdd(arr_2);
 Console.WriteLine();
