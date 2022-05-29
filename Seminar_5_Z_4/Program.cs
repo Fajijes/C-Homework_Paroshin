@@ -28,17 +28,17 @@ void Multiply(int[] arr)
     Console.Write($"Массив произведений пар чисел---> ");
     int max = arr.Length - 1;
 
-    for (int i = 0; i < (arr.Length) / 2 + 1; i++)Console.Write($"{arr[i] * arr[max]} "); max--;
+    for (int i = 0; i < ((arr.Length) / 2) +1 ; i++) Console.Write($"{arr[i] * arr[max]} "); max--;
     
  Console.WriteLine();   
 }
 
-int[] arr_1 = Mass(10);
+int[] arr_1 = Mass(5);
 Print(arr_1);
 Multiply(arr_1);
 
-int[] arr_2 = Mass(15);
-Print(arr_2);
-Multiply(arr_2);
-Console.WriteLine();
+// int[] arr_2 = Mass(15);
+// Print(arr_2);
+// Multiply(arr_2);
+// Console.WriteLine();
 
