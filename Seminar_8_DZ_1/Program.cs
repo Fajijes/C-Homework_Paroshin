@@ -8,13 +8,9 @@ void Print(int[,] arr)
     int ColumnSize = arr.GetLength(1);
 
     for (int i = 0; i < RowSize; i++)
-    {
         for (int j = 0; j < ColumnSize; j++)
-        {
             Console.Write($"\t{arr[i, j]} ");
-        }
         Console.WriteLine();
-    }
     Console.WriteLine();
 }
 
