@@ -39,9 +39,9 @@ int row = int.Parse(Console.ReadLine());
 Console.Write("Enter the number of columns: ");
 int column = int.Parse(Console.ReadLine());
 
-int[,] arr1 = FillArray(row, column, 0, 5);
+int[,] arr1 = FillArray(row, column, 1, 10);
 PrintArray(arr1);
-int[,] arr2 = FillArray(row, column, 0, 5);
+int[,] arr2 = FillArray(row, column, 1, 10);
 PrintArray(arr2);
 
 int[,] res_matrix = Multiply(arr1, arr2);
